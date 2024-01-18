@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python-multipart = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
+uvicorn = {extras = ["standard"], version = "*"}
+python-jose = {extras = ["cryptography"], version = "*"}
+psycopg2-binary = "*"
+sqlalchemy = "*"
+alembic = "*"
+fastapi = "*"
+aiofiles = "*"
+jinja2 = "*"
+
+[dev-packages]
