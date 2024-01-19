@@ -1,4 +1,4 @@
-from models.modelTodo import Todo
+from TodoApp.models.modelTodo import Todo
 
 
 def delete_todo_existing(todo_id, db, user):

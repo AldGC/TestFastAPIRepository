@@ -2,8 +2,8 @@ import sys
 from fastapi import Depends, APIRouter, Request, Form
 from sqlalchemy.orm import Session
 from .auth import get_current_user
-from models.modelTodo import Todo
-from database import SessionLocal
+from TodoApp.models.modelTodo import Todo
+from TodoApp.database import SessionLocal
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 

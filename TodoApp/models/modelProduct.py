@@ -1,4 +1,4 @@
-from database import Base
+from TodoApp.database import Base
 from sqlalchemy import String, Column, Integer, Float
 
 

@@ -3,13 +3,10 @@ from fastapi import Depends, HTTPException, Path, APIRouter, Request
 from starlette import status
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
-from fastapi.templating import Jinja2Templates
 
-from services.servicesTodo import *
-from .auth import get_current_user, get_user_exception
-from models.modelProduct import Product
-from models.modelUser import Base
-from database import SessionLocal, engine
+from TodoApp.models.modelProduct import Product
+from TodoApp.models.modelUser import Base
+from TodoApp.database import SessionLocal, engine
 
 
 router = APIRouter(

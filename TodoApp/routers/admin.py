@@ -1,8 +1,8 @@
 from typing import Annotated
 from sqlalchemy.orm import Session
 from fastapi import Depends, HTTPException, Path, APIRouter
-from models.modelTodo import Todo
-from database import SessionLocal
+from TodoApp.models.modelTodo import Todo
+from TodoApp.database import SessionLocal
 from .auth import get_current_user
 from starlette import status
 

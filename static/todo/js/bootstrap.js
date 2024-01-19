@@ -4,8 +4,8 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('TodoApp/static/todo/js/popper.js')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'TodoApp/static/todo/js/popper.js'], factory) :
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('static/todo/js/popper.js')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'static/todo/js/popper.js'], factory) :
   (global = global || self, factory(global.bootstrap = {}, global.jQuery, global.Popper));
 }(this, function (exports, $, Popper) { 'use strict';
 

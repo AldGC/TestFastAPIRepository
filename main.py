@@ -10,7 +10,7 @@ app = FastAPI()
 
 Base.metadata.create_all(bind=engine)
 
-app.mount('TodoApp/static', StaticFiles(directory='static'), name='static')
+app.mount('/static', StaticFiles(directory='static'), name='static')
 
 
 @app.get('/')
