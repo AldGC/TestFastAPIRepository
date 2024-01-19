@@ -4,12 +4,12 @@ from fastapi import Depends, HTTPException, Path, APIRouter, Request, Form
 from starlette.responses import RedirectResponse
 from starlette.templating import Jinja2Templates
 
-from TodoApp.database import SessionLocal
+from database import SessionLocal
 from .auth import get_current_user, verify_password, get_password_hash
 from starlette import status
 from pydantic import BaseModel, Field
 from passlib.context import CryptContext
-from TodoApp.models.modelUser import User
+from models.modelUser import User
 
 router = APIRouter(
     prefix="/user",

@@ -3,8 +3,8 @@ from typing import Annotated
 from fastapi import APIRouter, Depends, HTTPException, Request, Response, Form
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
-from TodoApp.database import SessionLocal, engine, Base
-from TodoApp.models.modelUser import User
+from database import SessionLocal, engine, Base
+from models.modelUser import User
 from passlib.context import CryptContext
 from starlette import status
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
@@ -18,7 +18,7 @@ templates = Jinja2Templates(directory='templates')
 
 import sys
 
-sys.path.append("..")
+sys.path.append("../TodoApp")
 
 router = APIRouter(
     prefix="/auth",

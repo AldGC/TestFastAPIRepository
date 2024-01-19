@@ -2,15 +2,15 @@ import sys
 from fastapi import Depends, APIRouter, Request, Form
 from sqlalchemy.orm import Session
 from .auth import get_current_user
-from TodoApp.models.modelTodo import Todo
-from TodoApp.database import SessionLocal
+from models.modelTodo import Todo
+from database import SessionLocal
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
 from starlette.responses import RedirectResponse
 from starlette import status
 
-sys.path.append("..")
+sys.path.append("../TodoApp")
 
 router = APIRouter(
     prefix="/todo",

@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
 from TodoApp.models.modelProduct import Product
-from TodoApp.models.modelUser import Base
+from models.modelUser import Base
 from TodoApp.database import SessionLocal, engine
 
 
