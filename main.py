@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from database import Base
-from database import engine
-from routers import auth, todos, admin, users
+from TodoApp.database import Base
+from TodoApp.database import engine
+from TodoApp.routers import auth, todos, admin, users
 from starlette.staticfiles import StaticFiles
 from starlette.responses import RedirectResponse
 from starlette import status
