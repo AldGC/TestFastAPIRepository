@@ -14,5 +14,7 @@ alembic = "*"
 fastapi = "*"
 aiofiles = "*"
 jinja2 = "*"
+pydantic-core = "*"
+typing-extensions = "*"
 
 [dev-packages]

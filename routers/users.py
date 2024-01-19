@@ -1,6 +1,6 @@
 from typing import Annotated
 from sqlalchemy.orm import Session
-from fastapi import Depends, HTTPException, Path, APIRouter, Request, Form
+from fastapi import Depends, HTTPException, APIRouter, Request, Form
 from starlette.responses import RedirectResponse
 from starlette.templating import Jinja2Templates
 
